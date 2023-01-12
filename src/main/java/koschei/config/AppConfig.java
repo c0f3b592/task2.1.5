@@ -1,5 +1,6 @@
 package koschei.config;
 
+import koschei.models.Deth8;
 import koschei.models.Island2;
 import koschei.models.Needle7;
 import koschei.models.Wood3;
@@ -17,7 +18,7 @@ public class AppConfig {
     }
 
     @Bean
-    public static Needle7 getNeedle() {
-        return new Needle7();
+    public static Needle7 getNeedle(Deth8 deth) {
+        return new Needle7(deth);
     }
 }
